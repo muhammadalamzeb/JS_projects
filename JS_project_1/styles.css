@@ -1,0 +1,22 @@
+h1{
+    color: rgb(29, 29, 39);
+}
+.button{
+    display: inline-block;
+    width:  100px;
+    height: 100px; 
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
