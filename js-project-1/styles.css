@@ -1,25 +1,33 @@
 body{
-    background-color: red;
+    background-color: rgb(84, 84, 84);
+    color: rgb(46, 135, 191);
 }
-h1{
-    color: rgb(29, 29, 39);
+.container{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.button{
-    display: inline-block;
-    width:  100px;
-    height: 100px; 
-    cursor: pointer;
-    border: 5px solid rgba(0, 0, 0, 0.3);
+label{
+    padding-bottom: 10px;
 }
-#red{
-    background-color: red;
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5%;
+    margin-left: 170px;
 }
-#green{
-    background-color: green;
+.container{
+    width: 100;
+   
 }
-#blue{
-    background-color: blue;
-}
-#yellow{
-    background-color: yellow;
+#result{
+    margin-top: 10px;
+    width: 270px;
+    display: flex;
+    background-color: purple;
+    justify-content: center;
+    align-items: center;
+    
 }

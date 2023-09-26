@@ -1,24 +1,13 @@
-const buttons = document.querySelectorAll(".button");
 
-const body = document.querySelector("body");
+const form = document.querySelector('form');
 
-buttons.forEach(function (button) {
-    console.log(button);
+form.addEventListener('submit',function(e){
+    e.preventDefault();
 
-    button.addEventListener('click',function(e){
-        console.log(e);
-        console.log(e.target);
-        if(e.target.id === 'blue'){
-            body.style.backgroundColor = e.target.id;
-        }
-        else if(e.target.id === 'green'){
-            body.style.backgroundColor = e.target.id;
-        }
-        else if(e.target.id === 'red'){
-            body.style.backgroundColor = e.target.id;
-        }
-        else if(e.target.id === 'yellow'){
-            body.style.backgroundColor = 'yellow';
-        }
-    });
+    const height = parseInt(document.querySelector('#height').value);
+    const weight = parseInt(document.querySelector("#weight").value);
+    const results = document.querySelector('#result');
+
+    const bmi = (weight / ((height * height)/10000)).toFixed(2);
+    results.innerHTML  = bmi;
 });
