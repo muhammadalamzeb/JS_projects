@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <title>Guess Number</title>
+        <style>
+            body{
+                background-color: #212121;
+                color: #fff;
+            }
+            .wrapper
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                flex-direction: column;
+            }
+            .guesssubmit
+            {
+                
+                margin-top: 10px;
+                font-size: 22px;
+                background-color: #212121;
+                color: #fff;
+                border-radius: 10%;
+                padding: 10px;
+            }
+            #guess{
+                justify-content: center;
+                font-size: 50px;
+            }
+            #guessfield{
+                font-size: 30px;
+            }
+            h1{
+                background-color: black;
+                font-size: 50px;
+            }
+        </style>
     </head>
     <body>
-        <form>
-        <div class="container">
-            <h2>BMI Calculator</h2>
-            <label>Height in CM: <input id="height" required></label>
-            <label>Weight in KG: <input id="weight" required></label>
-            <button>Calculate</button>
-            <div id="result"></div>  
-        </div>
+        <div class="wrapper">
+            <h1>Number Guessing Game</h1>
         
-    </form>
-    <div class="container">
-        <h2>BMI Weight Guide</h2>
-        <p>Under Weight = Less than 18.6</p>
-        <p>Normal Range = 18.6 and 24.9</p>
-        <p>Overweight = Greater than 24.9</p>
-    </div>
+            <p>Try and guess a random number between 1 and 100.</p>
+            <p>You have 10 attempts to guess the right number.</p>
+            <br>
+
+            <form class="form">
+                <label for="guessfield" id="guess">Guess a number</label><br>
+                <input type="number" id="guessfield" class="guessfield"><br>
+                <input type="submit" id="subt" value="Submit Guess" class="guesssubmit">
+            </form>
+            <div class="resultParas"> 
+                <p>Previous Guesses: <span class="guesses"></span></p>
+                <p>Guesses Remaining: <span class="lastresult">10</span></p>
+                <p class="lowOrHi"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
     </body>
-    <script src="script.js"></script>
 </html>
