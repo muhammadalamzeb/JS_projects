@@ -1,3 +1,6 @@
+body{
+    background-color: red;
+}
 h1{
     color: rgb(29, 29, 39);
 }
@@ -6,7 +9,7 @@ h1{
     width:  100px;
     height: 100px; 
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.3);
 }
 #red{
     background-color: red;
